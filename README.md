@@ -1,6 +1,6 @@
 # FeaturePulse — Customer Feedback Intelligence & SRE Self-Healing Platform
 
-[![CI/CD Pipeline](https://github.com/chawlamayur11/final-project-2/actions/workflows/ci.yml/badge.svg)](https://github.com/chawlamayur11/final-project-2/actions/workflows/ci.yml)
+[![CI/CD Pipeline](https://github.com/chawlamayur11/featurepulse/actions/workflows/ci.yml/badge.svg)](https://github.com/chawlamayur11/featurepulse/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![OpenTelemetry](https://img.shields.io/badge/telemetry-OpenTelemetry-blueviolet)](docs/observability.md)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-emerald?style=flat&logo=render)](https://featurepulse-ro2p.onrender.com)
@@ -10,6 +10,16 @@
 
 > **AI Dev Tools Zoomcamp 2026 — Final Project Submission**  
 > *A full-stack, AI-assisted feedback intelligence and roadmap platform with end-to-end OpenTelemetry correlation, real user impact alerting, and an autonomous on-call responder agent.*
+
+---
+
+### 🌐 Quick Links & Live Demo
+- **Live Deployed Web Application**: [https://featurepulse-ro2p.onrender.com](https://featurepulse-ro2p.onrender.com)
+- **Interactive API Swagger Docs**: [https://featurepulse-ro2p.onrender.com/docs](https://featurepulse-ro2p.onrender.com/docs)
+- **Prometheus Telemetry Scrape Endpoint**: [https://featurepulse-ro2p.onrender.com/metrics](https://featurepulse-ro2p.onrender.com/metrics)
+- **Service Health Check**: [https://featurepulse-ro2p.onrender.com/health](https://featurepulse-ro2p.onrender.com/health)
+- **GitHub Repository**: [https://github.com/chawlamayur11/featurepulse](https://github.com/chawlamayur11/featurepulse)
+- **12-Criteria Rubric Verification Map**: [docs/rubric_map.md](docs/rubric_map.md)
 
 ---
 
