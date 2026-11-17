@@ -1,0 +1,38 @@
+services:
+  # Backend FastAPI Web Service
+  - type: web
+    name: featurepulse-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    region: oregon
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: featurepulse-db
+          property: connectionString
+
+  # Frontend React (Vite) Static Site / Docker
+  - type: web
+    name: featurepulse-frontend
+    runtime: docker
+    dockerfilePath: ./frontend/Dockerfile
+    dockerContext: ./frontend
+    plan: free
+    region: oregon
+    envVars:
+      - key: VITE_API_BASE_URL
+        fromService:
+          type: web
+          name: featurepulse-backend
+          property: host
+
+databases:
+  - name: featurepulse-db
+    plan: free
+    region: oregon
+    databaseName: featurepulse
+    user: featurepulse
