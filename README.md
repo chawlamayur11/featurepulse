@@ -1,6 +1,6 @@
 # FeaturePulse — Customer Feedback Intelligence & SRE Self-Healing Platform
 
-[![CI/CD Pipeline](https://github.com/your-username/featurepulse/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/featurepulse/actions/workflows/ci.yml)
+[![CI/CD Pipeline](https://github.com/chawlamayur11/final-project-2/actions/workflows/ci.yml/badge.svg)](https://github.com/chawlamayur11/final-project-2/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![OpenTelemetry](https://img.shields.io/badge/telemetry-OpenTelemetry-blueviolet)](docs/observability.md)
 [![FastAPI](https://img.shields.io/badge/backend-FastAPI-009688)](https://fastapi.tiangolo.com)
