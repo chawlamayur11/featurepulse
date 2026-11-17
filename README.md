@@ -3,6 +3,7 @@
 [![CI/CD Pipeline](https://github.com/chawlamayur11/final-project-2/actions/workflows/ci.yml/badge.svg)](https://github.com/chawlamayur11/final-project-2/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![OpenTelemetry](https://img.shields.io/badge/telemetry-OpenTelemetry-blueviolet)](docs/observability.md)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-emerald?style=flat&logo=render)](https://featurepulse-ro2p.onrender.com)
 [![FastAPI](https://img.shields.io/badge/backend-FastAPI-009688)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/frontend-React%2018%20(Vite)-61DAFB)](https://react.dev)
 [![Docker](https://img.shields.io/badge/docker-ready-2496ED)](docker-compose.yml)
@@ -41,7 +42,7 @@ Modern product teams struggle with fragmented customer feedback across Discord, 
 | **5** | **Application** | 2 / 2 | Full-stack app works end-to-end: React 18 (`frontend/`) talks to FastAPI (`backend/app/`), persists in SQLite/PostgreSQL. Starts with a single command. |
 | **6** | **Testing** | 2 / 2 | Unit and integration tests in `backend/tests/`. All 20 tests pass with a single command (`python -m pytest backend/tests`). |
 | **7** | **Containerization** | 2 / 2 | Entire system (frontend, backend, database, prometheus) runs via Docker Compose: `docker compose up --build`. |
-| **8** | **Deployment** | 2 / 2 | Public cloud deployment guide and reproducible demo walkthrough in [Section 5](#5-deployment-guide). |
+| **8** | **Deployment** | 2 / 2 | **Live production URL:** [https://featurepulse-ro2p.onrender.com](https://featurepulse-ro2p.onrender.com) (Deployed via Render Docker runtime). |
 | **9** | **CI/CD** | 3 / 3 | [`.github/workflows/ci.yml`](.github/workflows/ci.yml) runs tests on PRs, verifies Docker build, deploys to Dev, and gates Production release. |
 | **10** | **Observability** | 2 / 2 | Key user journey (Vote/Post) instrumented with OpenTelemetry (`backend/app/telemetry/tracer.py`), Prometheus `/metrics`, structured JSON logs sharing `trace_id`, PII redactor, and in-app Telemetry UI. |
 | **11** | **Alerting on User Impact** | 2 / 2 | Defined user-impact alerts (`HighVotingErrorRateAlert`, `VotingVelocityAnomalyAlert`) documented in [`docs/oncall_runbook.md`](docs/oncall_runbook.md) and triggered via `/api/alerts/webhook`. |
