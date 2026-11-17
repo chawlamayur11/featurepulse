@@ -1,7 +1,10 @@
+import os
 import time
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from app.config import settings
 from app.database import init_db, SessionLocal
 from app.models import Post, Vote
@@ -157,3 +160,14 @@ app.include_router(comments.router)
 app.include_router(ai.router)
 app.include_router(alerts.router)
 app.include_router(telemetry.router)
+
+# Serve Frontend Static Assets if available (Production / Single-Container Render Deployment)
+dist_candidates = [
+    os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "frontend", "dist")),
+    os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "frontend", "dist")),
+    os.path.abspath(os.path.join(os.path.dirname(__file__), "dist")),
+]
+frontend_dist = next((p for p in dist_candidates if os.path.exists(p)), None)
+
+if frontend_dist:
+    app.mount("/", StaticFiles(directory=frontend_dist, html=True), name="frontend")
