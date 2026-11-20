@@ -41,26 +41,7 @@ Modern product teams struggle with fragmented customer feedback across Discord, 
 
 ---
 
-## 2. Course Rubric Verification Map (12 Criteria / 24 Points)
-
-| # | Criterion | Score | How It Is Implemented & Where to Verify |
-|---|---|---|---|
-| **1** | **Problem Description** | 2 / 2 | Detailed above and throughout this README (problem, functionality, user journeys). |
-| **2** | **Product Specification** | 2 / 2 | [`docs/tasks.md`](docs/tasks.md) specifies user personas, acceptance criteria AC-1 to AC-6, and the agent task execution tracker. |
-| **3** | **Agent Team Specification** | 2 / 2 | [`docs/team.md`](docs/team.md) defines 7 agent roles, handoff protocols, and quality gates. |
-| **4** | **Context Management** | 2 / 2 | [`AGENTS.md`](AGENTS.md) at root provides project context and links to modular docs in `docs/`. |
-| **5** | **Application** | 2 / 2 | Full-stack app works end-to-end: React 18 (`frontend/`) talks to FastAPI (`backend/app/`), persists in SQLite/PostgreSQL. Starts with a single command. |
-| **6** | **Testing** | 2 / 2 | Unit and integration tests in `backend/tests/`. All 20 tests pass with a single command (`python -m pytest backend/tests`). |
-| **7** | **Containerization** | 2 / 2 | Entire system (frontend, backend, database, prometheus) runs via Docker Compose: `docker compose up --build`. |
-| **8** | **Deployment** | 2 / 2 | **Live production URL:** [https://featurepulse-ro2p.onrender.com](https://featurepulse-ro2p.onrender.com) (Deployed via Render Docker runtime). |
-| **9** | **CI/CD** | 3 / 3 | [`.github/workflows/ci.yml`](.github/workflows/ci.yml) runs tests on PRs, verifies Docker build, deploys to Dev, and gates Production release. |
-| **10** | **Observability** | 2 / 2 | Key user journey (Vote/Post) instrumented with OpenTelemetry (`backend/app/telemetry/tracer.py`), Prometheus `/metrics`, structured JSON logs sharing `trace_id`, PII redactor, and in-app Telemetry UI. |
-| **11** | **Alerting on User Impact** | 2 / 2 | Defined user-impact alerts (`HighVotingErrorRateAlert`, `VotingVelocityAnomalyAlert`) documented in [`docs/oncall_runbook.md`](docs/oncall_runbook.md) and triggered via `/api/alerts/webhook`. |
-| **12** | **On-Call Agent** | 2 / 2 | Autonomous On-Call Agent in `backend/app/agent/oncall.py` wakes up on alert, correlates traces, executes auto-remediation, and drafts Incident Postmortem in UI. |
-
----
-
-## 3. Quickstart (Single-Command Run)
+## 2. Quickstart (Single-Command Run)
 
 ### Option A: Via Docker Compose (Recommended)
 Clone the repository and run:
@@ -95,7 +76,7 @@ Open [http://localhost:5173](http://localhost:5173).
 
 ---
 
-## 4. Running Tests (Single Command)
+## 3. Running Tests (Single Command)
 
 Execute the full backend unit and integration test suite:
 ```bash
@@ -114,7 +95,7 @@ python -m pytest backend/tests
 
 ---
 
-## 5. Deployment Guide
+## 4. Deployment Guide
 
 FeaturePulse is ready for containerized deployment to any cloud provider:
 
@@ -133,7 +114,7 @@ FeaturePulse is ready for containerized deployment to any cloud provider:
 
 ---
 
-## 6. Observability & Autonomous Self-Healing Demo
+## 5. Observability & Autonomous Self-Healing Demo
 
 ### Live Telemetry Inspector
 Navigate to the **Telemetry & Traces** tab in the web UI:
@@ -152,7 +133,7 @@ Navigate to the **Incidents & On-Call** tab:
 
 ---
 
-## 7. Modular Documentation Index
+## 6. Modular Documentation Index
 
 - [`AGENTS.md`](AGENTS.md) — Root system context and guidelines
 - [`docs/tasks.md`](docs/tasks.md) — Product specifications & agent task execution tracker
