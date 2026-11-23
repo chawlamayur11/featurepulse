@@ -65,16 +65,16 @@
 
 The development was executed in structured phases across our specialized AI agent team.
 
-| Task ID | Task Description | Owner Agent | Acceptance Criteria | Status |
-|---|---|---|---|---|
-| **TASK-01** | Architecture design, data schemas, API contracts | Architecture Agent | AC-1 to AC-6 defined in `docs/` | ✅ Done |
-| **TASK-02** | Context management & `AGENTS.md` modular links | Context Agent | `AGENTS.md` references all modular docs | ✅ Done |
-| **TASK-03** | Backend core: FastAPI app, SQLAlchemy models, SQLite/PG | Backend Agent | AC-1.1, AC-1.2, AC-1.4, AC-2.1 | ✅ Done |
-| **TASK-04** | AI Deduplication & Smart Tagging engine | Backend Agent | AC-3.1, AC-3.2, AC-3.3 | ✅ Done |
-| **TASK-05** | OpenTelemetry, Prometheus metrics & structured JSON logs | Observability Agent | AC-5.1, AC-5.2, AC-5.3 | ✅ Done |
-| **TASK-06** | Alert trigger & Autonomous On-Call Responder Agent | Ops/OnCall Agent | AC-6.1, AC-6.2, AC-6.3 | ✅ Done |
-| **TASK-07** | Frontend: React + Vite + Tailwind UI (Board, Roadmap, AI) | Frontend Agent | AC-1.1, AC-2.3, AC-3.3, AC-4.1 | ✅ Done |
-| **TASK-08** | Unit & Integration Test Suite (pytest, TestClient) | QA Agent | All tests pass with single command | ✅ Done |
-| **TASK-09** | Docker Compose & single-command local run orchestration | DevOps Agent | `docker compose up --build` works | ✅ Done |
-| **TASK-10** | CI/CD pipeline (GitHub Actions) with test & deploy gates | DevOps Agent | `.github/workflows/ci.yml` verified | ✅ Done |
-| **TASK-11** | Documentation & Rubric verification mapping | Documentation Agent | README + Rubric mapping complete | ✅ Done |
+| Task ID | GitHub Issue | Task Description | Owner Agent | Acceptance Criteria | Status |
+|---|---|---|---|---|---|
+| **TASK-01** | [#1](https://github.com/chawlamayur11/featurepulse/issues/1) | Architecture design, data schemas, API contracts | Architecture Agent | AC-1 to AC-6 defined in `docs/` | ✅ Done |
+| **TASK-02** | [#2](https://github.com/chawlamayur11/featurepulse/issues/2) | Context management & `AGENTS.md` modular links | Context Agent | `AGENTS.md` references all modular docs | ✅ Done |
+| **TASK-03** | [#3](https://github.com/chawlamayur11/featurepulse/issues/3) | Backend core: FastAPI app, SQLAlchemy models, SQLite/PG | Backend Agent | AC-1.1, AC-1.2, AC-1.4, AC-2.1 | ✅ Done |
+| **TASK-04** | [#4](https://github.com/chawlamayur11/featurepulse/issues/4) | AI Deduplication & Smart Tagging engine | Backend Agent | AC-3.1, AC-3.2, AC-3.3 | ✅ Done |
+| **TASK-05** | [#5](https://github.com/chawlamayur11/featurepulse/issues/5) | OpenTelemetry, Prometheus metrics & structured JSON logs | Observability Agent | AC-5.1, AC-5.2, AC-5.3 | ✅ Done |
+| **TASK-06** | [#6](https://github.com/chawlamayur11/featurepulse/issues/6) | Alert trigger & Autonomous On-Call Responder Agent | Ops/OnCall Agent | AC-6.1, AC-6.2, AC-6.3 | ✅ Done |
+| **TASK-07** | [#7](https://github.com/chawlamayur11/featurepulse/issues/7) | Frontend: React + Vite + Tailwind UI (Board, Roadmap, AI) | Frontend Agent | AC-1.1, AC-2.3, AC-3.3, AC-4.1 | ✅ Done |
+| **TASK-08** | [#8](https://github.com/chawlamayur11/featurepulse/issues/8) | Unit & Integration Test Suite (pytest, TestClient) | QA Agent | All tests pass with single command | ✅ Done |
+| **TASK-09** | [#9](https://github.com/chawlamayur11/featurepulse/issues/9) | Docker Compose & single-command local run orchestration | DevOps Agent | `docker compose up --build` works | ✅ Done |
+| **TASK-10** | [#10](https://github.com/chawlamayur11/featurepulse/issues/10) | CI/CD pipeline (GitHub Actions) with test & deploy gates | DevOps Agent | `.github/workflows/ci.yml` verified | ✅ Done |
+| **TASK-11** | [#11](https://github.com/chawlamayur11/featurepulse/issues/11) | Documentation & Rubric verification mapping | Documentation Agent | README + Rubric mapping complete | ✅ Done |
